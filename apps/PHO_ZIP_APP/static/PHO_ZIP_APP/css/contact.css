@@ -1,0 +1,20 @@
+#left{
+    margin-left: 2%;
+    width: 30%;
+    display: inline-block;
+}
+
+#right{
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+#map{
+    width: 100%;
+}
+
+#nodeco{
+    text-decoration: none;
+}

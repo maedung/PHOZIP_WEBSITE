@@ -1,0 +1,39 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+#Nav_Logo{
+    height: 80px;
+    padding: 10px;
+}
+
+#Nav_Logo_img{
+    height: 60px;
+}
+
+#Nav_link{
+    text-decoration: none;
+}
+
+#Nav_taps{
+    color:red;
+}
+
+#description{
+    color: brown;
+}
+
+#price{
+    color: red;
+}
+
+#vege_logo{
+    height: 25px;
+}

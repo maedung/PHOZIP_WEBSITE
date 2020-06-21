@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Pho Zip</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="{% static 'PHO_ZIP_APP/css/base.css' %}">    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="/" id="Nav_Logo" class="w3-bar-item"><img id="Nav_Logo_img" src="{% static 'PHO_ZIP_APP/images/Logo.jpg' %}" alt="LOGO"></a>
+    <!-- Left-sided navbar links -->
+    <div class="w3-left w3-margin-top w3-hide-small ">
+      <a href="/" id="Nav_link" class="w3-bar-item"><b id="Nav_taps">HOME</b></a>
+      <a href="/phozipmenu" id="Nav_link" class="w3-bar-item"><b id="Nav_taps">PHO ZIP MENU</b></a>
+      <a href="/phochamenu" id="Nav_link" class="w3-bar-item"><b id="Nav_taps">PHO CHA MENU</b></a>
+      <a href="/drinkmenu" id="Nav_link" class="w3-bar-item"><b id="Nav_taps">DRINK MENU</b></a>
+      <a href="/contact" id="Nav_link" class="w3-bar-item"><b id="Nav_taps">CONTACT US</b></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-margin-top" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="/" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="/phozipmenu" onclick="w3_close()" class="w3-bar-item w3-button">PHO ZIP MENU</a>
+  <a href="/phochamenu" onclick="w3_close()" class="w3-bar-item w3-button">PHO CHA MENU</a>
+  <a href="/drinkmenu" onclick="w3_close()" class="w3-bar-item w3-button">DRINK MENU</a>
+  <a href="/contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+<div style="height: 100px;"></div>
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/phozipphocha" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/phozipphocha" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.yelp.com/biz/pho-zip-and-pho-cha-fullerton-3" target="_blank"><i class="fa fa-yelp w3-hover-opacity"></i></a>
+  </div>
+</footer>
+  </body>
+  </html>
+<script src="{% static 'PHO_ZIP_APP/js/script.js' %}"></script>
+  

@@ -1,0 +1,36 @@
+{% extends "PHO_ZIP_APP/header_footer.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'PHO_ZIP_APP/css/contact.css' %}">
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container">
+  <div class="w3-display-left" style="padding:48px"></div>
+  <div class="w3-hide-small">
+    <div id="left">
+      <h1 class="w3-center"><b>Location</b></h1>
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.455184384098!2d-117.96560998494022!3d33.87792908065365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2a4ef93cffe1%3A0xe1c07d25e6557c0!2sPho%20Zip!5e0!3m2!1sen!2sus!4v1592616450811!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <h3 class="w3-center"><b>PHO ZIP</b></h3>
+      <p class="w3-center">1945 W Malvern Ave, Fullerton, CA 92833</p>
+      <h3 class="w3-center">
+        <a class="w3-text-red" target="_blank" id="nodeco" href="https://www.google.com/maps/dir//Pho+Zip,+1945+W+Malvern+Ave,+Fullerton,+CA+92833/@33.8779291,-117.96561,17z/data=!3m1!5s0x80dd2a4efbd7fbbb:0xe8c76fead9bb2ac0!4m8!4m7!1m0!1m5!1m1!1s0x80dd2a4ef93cffe1:0xe1c07d25e6557c0!2m2!1d-117.9634213!2d33.8779291">Get Directions</a>
+      </h3>
+    </div>
+    <div id="right">
+      <h1 class="w3-center"><b>CONTACT INFO</b></h1>
+      <h3 class="w3-center w3-text-red"><b>OPEN HOURS</b></h3>
+      <div class="w3-center">
+        <p>MON - SUN</p>
+        <p>11:00AM - 3:00PM</p>
+        <p>5:00PM - 10:00PM</p>
+      </div>
+      <hr>
+      <h3 class="w3-center w3-text-red"><b>PHONE NUMBER</b></h3>
+      <div class="w3-center">
+        <a id="nodeco" href="tel:714-446-9588">(714) 446-9588</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+{% endblock %}
+

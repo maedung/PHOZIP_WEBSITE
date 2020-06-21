@@ -1,0 +1,203 @@
+{% extends "PHO_ZIP_APP/header_footer.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'PHO_ZIP_APP/css/menu.css' %}">
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container">
+    <div class="w3-display-left" style="padding:48px"></div>
+        <h1 class="w3-center"><b>PHOZIP 11:00AM - 3:00PM</b></h1>
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> STARTERS + SANDWICHES </b></h1>
+            <div class="w3-quarter">
+                <h3><b>25. Vietnamese Sandwich</b></h3>
+                <p id="description">BANH MI 월남 샌드위치</p>
+                <p id="description">Beef(소고기), Pork(돼지고기), Chicken(닭고기)</p>
+                <p id="price">$7.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>26. Egg Rolls</b></h3>
+                <p id="description">CHA GIO 월남 에그롤</p>
+                <p id="price">4 pcs : $7.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>27. Fried Dumpling</b></h3>
+                <p id="description">튀김 만두</p>
+                <p id="price">6 pcs : $7.99 / 10 pcs : $10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>28. Rice Rolls</b> </h3>
+                <p id="description">GOI CUON 쌀국수말이</p>
+                <p id="description">Beef(소고기), Shrimp(새우)0, Pork(돼지고기), Tofu(두부)  <img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"></p>
+                <p id="price">2 pcs : $6.99</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>29. Rice + Egg Roll Combo</b></h3>
+                <p id="description">GOI CUON 쌀국수말이 & 튀김만두 콤보</p>
+                <p id="price">$8.99</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> PHO </b></h1>
+            <div class="w3-quarter">
+                <h3><b>1. Beef Combo</b></h3>
+                <p id="description">Rare Steak, Brisket, Flank, Tendon, Tripe</p>
+                <p id="price">(S) $8.99　(M) $9.99　(L) $10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>2. Hana Combo</b></h3>
+                <p id="description">Shrimp, Meatball, Steak, Brisket, Flank</p>
+                <p id="price">(M) $12.99　(L) $13.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>3. Everything Combo</b></h3>
+                <p id="description">Dumpling, Chicken, Tofu, Shrimp, Meatball, Steak, Brisket</p>
+                <p id="price">(M) $14.99　(L) $15.99</p>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> 30.Plain Noddle (NO meat) </b></h1>
+            <div class="w3-center">
+                <h3 id="price">Kids: $4.49 (S) $5.99 (M) $6.99 (L) $7.99</h3>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b>THREE SIZE (S)(M)(L)</b></h1>
+            <h3 class="w3-center" id="price">(S) $8.99　(M) $9.99　(L) $10.99</h3>
+            <div class="w3-quarter">
+                <h3><b>4. Rare Steak & Tendon</b></h3>
+                <p id="description">TAI GAN 생안심, 우족</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>5. Rare Steak & Tripe</b></h3>
+                <p id="description">TAI SACH 생안심, 천엽</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>6. Well Done Brisket</b></h3>
+                <p id="description">CHIN NAC 양지머리</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>7. Rare Steak & Fat Crispy</b></h3>
+                <p id="description">TAI GAU 생안심, 차돌박이</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>8. Rare Steak TAI</b></h3>
+                <p id="description">TAI 생안심</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>9. Meatball</b></h3>
+                <p id="description">PHO BO VIEN 미트볼</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>10. Rare Steak, Flank, Fat Crispy</b></h3>
+                <p id="description">Crispy TAI NAM GAU 안심, 등심, 차돌박이</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>11. Well Done Flank</b></h3>
+                <p id="description">NAM VE DON 등심</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>12. Brisket & Flank</b></h3>
+                <p id="description">CHIM NAM VE DON 양지머리, 등심</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>13. Rare Steak & Brisket</b></h3>
+                <p id="description">TAI CHIN NAC 안심, 양지머리</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>14. Rare Steak & Flank</b></h3>
+                <p id="description">TAI NAM 안심, 등심</p>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> SPECIALTY PHO </b></h1>
+            <h3 class="w3-center" id="price">(M) $10.99　(L) $11.99</h3>
+            <div class="w3-quarter">
+                <h3><b>15. Dumpling</b></h3>
+                <p id="description">만두 국수</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>16. Seafood Combo</b></h3>
+                <p id="description">Shrimp, Squid, Crab meat</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>17. Chicken Noodle</b></h3>
+                <p id="description">닭고기 국수</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>18. Shrimp + Fishcake</b></h3>
+                <p id="description">오뎅 & 새우 국수</p>
+            </div>
+        </div> 
+
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>31. Tofu + Vegetable</b> <img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"></h3>
+                <p id="description">두부 국수 (베지테리언)</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>32. Vegetable + Tofu</b> <img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"></h3>
+                <p id="description">야채 국수 (베지테리언)</p>
+            </div>
+        </div> 
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> RICE DISHES </b></h1>
+            <div class="w3-quarter">
+                <h3><b>20. Charbroiled w/ Rice</b></h3>
+                <p id="description">덮밥</p>
+                <p id="description">Beef(소고기), Pork(돼지고기), Chicken(닭고기)</p>
+                <p id="price">$11.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>24. Korean Kimchi Fried Rice</b></h3>
+                <p id="description">김치 볶음밥</p>
+                <p id="description">Beef(소고기), Pork(돼지고기) <span id="price"> $11.99</span></p>
+                <p id="description">Combo(콤보) <span id="price">$12.99</span></p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>21. Fried Rice</b></h3>
+                <p id="description">볶음밥</p>
+                <p id="description">Beef(소고기), Pork(돼지고기), Chicken(닭고기), Tofu(두부) <img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"> <span id="price">$10.49</span></p>
+                <p id="description">Shrimp(새우) <span id="price">$11.49</span> Combo(콤보) <span id="price">$11.99</span></p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>22. Korean Short Rib BBQ</b></h3>
+                <p id="description">갈비</p>
+                <p id="price">$19.99</p>
+            </div>
+        </div> 
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> Vermicelli </b></h1>
+            <div class="w3-center">
+                <h3><b>19. Vermicelli</b> <span id="description">BUN 비빔국수</span></h3>
+                <p id="description">Beef(소고기), Pork(돼지고기), Egg Roll (4pcs), Chicken(닭고기), Shrimp(새우), Tofu(두부)<img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"> <span id="price">$11.49</span></p>
+                <p id="description">Combo(콤보 2~3 Choice) <span id="price">$12.99</span></p>
+                <p id="price">Ask for: No Cilantro / Onion, Fried Onion, Egg Noodle, Kimchi</p>
+                <p id="price">$2 Extras: Fried egg, Steamed Rice, Extra Noodle, French Bread</p>
+                <p id="price">$4 Extras: Meat, Chicken, Vegetables, Meatball, Tofu, Dumpling, Shrimp(3pcs), Pork, Fishcake</p>
+                <p id="price">$0.50 Optional: Spicy Pho or Add Spicy to Fried Dishes</p>
+                <p><b>Vegetariran / Vegan = <img id="vege_logo" src="{% static 'PHO_ZIP_APP/images/vege.png' %}" alt="Vegetarian"></b></p>
+            </div>
+        </div> 
+</header>
+{% endblock %}
+

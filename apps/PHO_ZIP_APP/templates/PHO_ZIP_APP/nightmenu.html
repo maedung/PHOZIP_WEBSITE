@@ -1,0 +1,378 @@
+{% extends "PHO_ZIP_APP/header_footer.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'PHO_ZIP_APP/css/menu.css' %}">
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container">
+    <div class="w3-display-left" style="padding:48px"></div>
+        <h1 class="w3-center"><b>PHOCHA 5:00PM - 10:00PM</b></h1>
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> New Menu </b></h1>
+            <div class="w3-quarter">
+                <h3><b>육회</b></h3>
+                <p id="description">Beef Sashimi</p>
+                <p id="price">$23.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>육전</b></h3>
+                <p id="description">Pan Fried Beef Patties</p>
+                <p id="price">$18.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>주먹고기 볶음</b></h3>
+                <p id="description">Stir Fried Knuckle Meat</p>
+                <p id="price">$19.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>감바스</b> </h3>
+                <p id="description">Gambas</p>
+                <p id="price">$20.99</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>타코와사비</b></h3>
+                <p id="description">Tacowasabi</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>포차 팝콘 치킨</b></h3>
+                <p id="description">Pocha Popcorn Chicken</p>
+                <p id="price">$10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>굴튀김</b></h3>
+                <p id="description">Fried Oyster</p>
+                <p id="price">$10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>오징어 숏다리 튀김</b></h3>
+                <p id="description">Squid Kara-age</p>
+                <p id="price">$10.99</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> 기본안주 </b></h1>
+            <div class="w3-quarter">
+                <h3><b>계란찜</b></h3>
+                <p id="description">Steamed Egg</p>
+                <p id="price">$4.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>치즈계란말이</b></h3>
+                <p id="description">Cheese Omelett Roll</p>
+                <p id="price">$13.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>마약옥수수</b></h3>
+                <p id="description">Phocha elotes</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>나쵸 & 살사</b></h3>
+                <p id="description">Nacho with Salsa</p>
+                <p id="price">$6.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>마른 안주</b></h3>
+                <p id="description">Dried Fish Jerky & Peanuts</p>
+                <p id="price">$15.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>참치타다끼</b></h3>
+                <p id="description">Tuna Tadaki</p>
+                <p id="price">$21.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>꼬치</b></h3>
+                <p id="description">Skewer</p>
+                <p><span class="w3-text-yellow">Choice</span><br> Bacon & Pineapple<br> Bacon & Pineapple & Jalepeno<br> Sausage & Rice cake<br> Meatball & Rice cake</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>모듬꼬치</b></h3>
+                <p id="description">Skewer Sampler</p>
+                <p id="price">$16.99</p>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>콘치즈</b></h3>
+                <p id="description">Corn Cheese</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>화채 (Seasonal)</b></h3>
+                <p id="description">Fruit Salad</p>
+                <p id="price">$9.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>리치 황도</b></h3>
+                <p id="description">Lychee & Peach</p>
+                <p id="price">$9.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>포차 스팸 계란</b></h3>
+                <p id="description">Phocha Spam & Egg</p>
+                <p id="price">$9.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>전(김치전, 파전)</b></h3>
+                <p id="description">Korean Pancake(Kimchi, Green Onion)</p>
+                <p id="price">$13.99</p>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b>식사류</b></h1>
+            <div class="w3-quarter">
+                <h3><b>캐사디야</b></h3>
+                <p id="description">Quesadilla</p>
+                <p id="price">$13.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>국물떡볶이</b></h3>
+                <p id="description">Spicy Rice Cake</p>
+                <p id="price">$15.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>두부김치</b></h3>
+                <p id="description">Tofu Kimchi</p>
+                <p id="price">$16.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>볶음밥</b></h3>
+                <p id="description">Fried Rice (Beef, Chicken, Pork, Shrimp, Kimchi)</p>
+                <p id="price">$11.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>양푼라면</b></h3>
+                <p id="description">Korean Ramen</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>추억의 도시락</b></h3>
+                <p id="description">Phocha Lunchbox</p>
+                <p id="price">$10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>복불복주먹밥(참치마요)</b></h3>
+                <p id="description">Riceballs</p>
+                <p id="price">$8.99</p>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b>탕 & 찌개</b></h1>
+            <div class="w3-quarter">
+                <h3><b>오뎅탕</b></h3>
+                <p id="description">Fishcake Soup</p>
+                <p id="price">$15.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>홍합탕</b></h3>
+                <p id="description">Mussel Soup</p>
+                <p id="price">$13.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>부대찌개</b></h3>
+                <p id="description">Korean Sausage Stew</p>
+                <p id="price">$18.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>번데기탕</b></h3>
+                <p id="description">Silkworm Pupas Stew</p>
+                <p id="price">$15.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>오뎅탕</b></h3>
+                <p id="description">Fishcake Soup</p>
+                <p id="price">$15.99</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> 볶음 & 무침 </b></h1>
+            <div class="w3-quarter">
+                <h3><b>닭똥집 볶음</b></h3>
+                <p id="description">Grilled Gizzard</p>
+                <p id="price">$17.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>골뱅이 무침</b></h3>
+                <p id="description">Seasoned Turban-Shell</p>
+                <p id="price">$18.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>소고기 숙주 볶음</b></h3>
+                <p id="description">Stir Fried Beef & Sprouts</p>
+                <p id="price">$18.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>쏘야 볶음</b></h3>
+                <p id="description">Stir Fried Sausage & Veggie</p>
+                <p id="price">$14.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>볶음 우동</b></h3>
+                <p id="description">Stir Fried Udon</p>
+                <p id="price">$18.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>오삼 볶음</b></h3>
+                <p id="description">Spicy Stir Fried Squid & Pork Belly</p>
+                <p id="price">$18.99</p>
+            </div>
+        </div> 
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> 치킨 & 튀김 </b></h1>
+            <div class="w3-quarter">
+                <h3><b>닭똥집 튀김</b></h3>
+                <p id="description">Fried Gizzard</p>
+                <p id="price">$17.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>치즈 불닭</b></h3>
+                <p id="description">Spicy Chicken & Cheese</p>
+                <p id="price">$16.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>수퍼프라이즈</b></h3>
+                <p id="description">Super Fries</p>
+                <p id="price">$13.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>허니 갈릭 윙</b></h3>
+                <p id="description">Honey Garlic Wing</p>
+                <p id="price">$16.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>튀김 샘플러</b></h3>
+                <p id="description">Fried Sampler (Chicken wing, Mini Eggroll, Fried Shrimp, Mozzarella Stick, Fries)</p>
+                <p id="price">$16.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>감튀</b></h3>
+                <p id="description">French Fries</p>
+                <p id="price">$4.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>돈까스</b></h3>
+                <p id="description">Pork Cutlet</p>
+                <p id="price">$15.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>할리피뇨 튀김</b></h3>
+                <p id="description">Fried Jalepeno</p>
+                <p id="price">$6.99</p>
+            </div>
+        </div> 
+
+
+        <div class="w3-row-padding">
+            <h1 class="w3-brown w3-center"><b> 포메뉴 </b></h1>
+            <div class="w3-quarter">
+                <h3><b>포 국물</b></h3>
+                <p id="description">Pho Soup</p>
+                <p id="price">$2.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>샌드위치</b></h3>
+                <p id="description">Vietnamese Sanwich(Beef, Chicken, Pork)</p>
+                <p id="price">$7.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>월남국수 Pho</b></h3>
+                <p id="description">(Steak, Brisket, Flank, Fatcrispy, Tendon, Tripe,Meatball, Dumpling, Chicken, Tofu, Vegetable)</p>
+                <p id="price">$8.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>월남국수콤보 Pho Combo</b></h3>
+                <p id="description">(Steak, Brisket, Flank, Tendon, Tripe)</p>
+                <p id="price">$10.99</p>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-quarter">
+                <h3><b>월남국수 플레인</b></h3>
+                <p id="description">Plain Pho</p>
+                <p id="price">$7.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>야채 월남국수</b></h3>
+                <p id="description">Vegetarian Pho (add Tofu $2)</p>
+                <p id="price">$9.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>해물 국수</b></h3>
+                <p id="description">(Shrimp, Mussel, Squid, Fishcake)</p>
+                <p id="price">$10.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>짬뽕 국수</b></h3>
+                <p id="description">Hangover Pho</p>
+                <p id="price">$11.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>에그롤 (4P)</b></h3>
+                <p id="description">EggRoll(Pork, Vegetable)</p>
+                <p id="price">$7.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>스프링롤 (2P)</b></h3>
+                <p id="description">Spring Roll(Shrimp, Beef, Pork, Chicken, Tofu)</p>
+                <p id="price">$6.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>비빔 국수</b></h3>
+                <p id="description">Vermicelli</p>
+                <p id="price">$11.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>3 Choice Combo</b></h3>
+                <p id="description">Beef, Chicken, Shrimp, Pork, Egg Roll, Tofu</p>
+                <p id="price">$12.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>덮밥</b></h3>
+                <p id="description">Charbroiled Rice (Beef, Pork, Chicken)</p>
+                <p id="price">$11.99</p>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <h2 class="w3-center"><b>* 사이드 메뉴 (Side Menu) *</b></h2>
+            <div class="w3-quarter">
+                <h3><b>쌀국수 소면</b></h3>
+                <p id="description">Pho Noodle</p>
+                <p id="price">$2.99</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>치즈</b></h3>
+                <p id="description">Cheese</p>
+                <p id="price">$1.50</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>밥</b></h3>
+                <p id="description">Rice</p>
+                <p id="price">$1.50</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>사리</b></h3>
+                <p id="description">Noodle</p>
+                <p id="price">$1.50</p>
+            </div>
+            <div class="w3-quarter">
+                <h3><b>고기 추가</b></h3>
+                <p id="description">Meat</p>
+                <p id="price">$2.00</p>
+            </div>
+        </div> 
+</header>
+{% endblock %}
+

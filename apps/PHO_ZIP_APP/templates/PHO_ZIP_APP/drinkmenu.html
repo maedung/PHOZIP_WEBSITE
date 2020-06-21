@@ -1,0 +1,201 @@
+{% extends "PHO_ZIP_APP/header_footer.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'PHO_ZIP_APP/css/menu.css' %}">
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container">
+  <div class="w3-display-left" style="padding:48px"></div>
+  
+  <div class="w3-row-padding">
+    <h1 class="w3-brown w3-center"><b> DRINKS </b></h1>
+    <h2 class="w3-center"><b>SIZES REGULAR OR LARGE</b></h2>
+    <h2 class="w3-center">R:<span id="price">$2.99</span> L: <span id="price">$3.49</span></h2>
+    <div class="w3-quarter">
+      <h3><b>CAPHE DEN</b></h3>
+      <p id="description">Hot Espresso Black Coffee</p>
+    </div>
+    <div class="w3-quarter">
+      <h3><b>CAPHE DA</b></h3>
+      <p id="description">Iced Espresso Black Coffee</p>
+    </div>
+    <div class="w3-quarter">
+      <h3><b>CAPHE SUA</b></h3>
+      <p id="description">Hot Espresso w/Condensed Milk</p>
+  </div>
+    <div class="w3-quarter">
+      <h3><b>CAPHE DEN DA</b></h3>
+      <p id="description">Iced Espresso Black Coffee</p>
+    </div>
+    <div class="w3-quarter">
+      <h3><b>JASMINE TEA (HOT/ICED)</b></h3>
+      <p id="description">Sweetened/Unsweetened</p>
+    </div>
+    <div class="w3-quarter">
+      <h3><b>GREEN TEA (HOT/ICED)</b></h3>
+      <p id="description">Sweetened/Unsweetened</p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row-padding">
+    <div class="w3-quarter">
+      <h3><b>FRESH COCONUT WATER</b></h3>
+      <p id="description">(One Size)</p>
+      <p id="price">$3.99</p>
+    </div>
+    <div class="w3-quarter">
+      <h3><b>SODA</b></h3>
+      <p id="description">Coke</p>
+      <p id="description">Diet Coke</p>
+      <p id="description">Sprite</p>
+      <p id="description">Sunkist</p>
+      <p id="price">$1.99</p>
+    </div>
+</div> 
+
+
+<div class="w3-row-padding">
+  <h1 class="w3-brown w3-center"><b>SLUSH</b></h1>
+  <h2 class="w3-center"><b>SIZE REGULAR OR LARGE</b></h2>
+  <h2 class="w3-center">R: <span id="price">$2.99</span> L: <span id="price">$3.49</span></h2>
+  <div class="w3-quarter">
+    <h3><b>STRAWBERRY</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>PEACH</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>MANGO</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>GRAPEFRUIT</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>APPLE</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>PASSIONFRUIT</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>KIWI</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>POMEGRANITE</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>RASPBERRY</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>LYCHEE</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>GRAPE</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>BLUEBERRY</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+</div>
+<hr>
+<div class="w3-row-padding">
+  <h2 class="w3-center"><b>SIZE REGULAR OR LARGE</b></h2>
+  <h2 class="w3-center">R: <span id="price">$3.25</span> L: <span id="price">$3.99</span></h2>
+  <div class="w3-quarter">
+    <h3><b>TARO</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>HONEYDEW</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>YOGURT</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>ALMOND</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>GREEN TEA</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>COCONUT</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>BANANA</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+  </div>
+</div>
+<h1 class="w3-center w3-text-green"><b>MIX AND MATCH FLAVORS FOR 50 cents EXTRA</b></h1>
+<h1 class="w3-brown w3-center"><b>PHO ZIP SPECIAL</b></h1>
+<div class="w3-row-padding">
+  <div class="w3-quarter">
+    <h3><b>MILK TEA</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+    <p>R: <span id="price">$2.99</span> L: <span id="price">$3.49</span></p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>THAI TEA</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+    <p>R: <span id="price">$2.99</span> L: <span id="price">$3.49</span></p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>COFFEE SLUSH</b></h3>
+    <p id="description">w/ Boba or Jelly</p>
+    <p>R: <span id="price">$3.25</span> L: <span id="price">$3.99</span></p>
+  </div>
+</div>
+<h2 class="w3-center w3-text-green"><b>BOBA OPTIONS:</b></h2>
+<h3 class="w3-center w3-text-green">Regular Boba</h3>
+<h3 class="w3-center w3-text-green">Rainbow Jelly</h3>
+<h3 class="w3-center w3-text-green">Lychee Jelly</h3>
+
+
+<h1 class="w3-brown w3-center"><b>BEER & WINE</b></h1>
+<div class="w3-row-padding">
+  <div class="w3-quarter">
+    <h3><b>SOJU</b></h3>
+    <p id="price">$11.99</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>MAKKOULI</b></h3>
+    <p id="price">$10.99</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>SOJU COCTAIL OF THE DAY</b></h3>
+    <p id="price">$6.99</p>
+  </div>
+</div>  
+
+
+<h1 class="w3-brown w3-center"><b>DRAFT BEER</b></h1>
+<div class="w3-row-padding">
+  <div class="w3-quarter">
+    <h3><b>REGULAR</b></h3>
+    <p id="price">$3.99</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>LARGE</b></h3>
+    <p id="price">$7.99</p>
+  </div>
+  <div class="w3-quarter">
+    <h3><b>PITCHER</b></h3>
+    <p id="price">$14.99</p>
+  </div>
+</div>
+</header>
+{% endblock %}
+
